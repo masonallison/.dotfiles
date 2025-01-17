@@ -1,5 +1,0 @@
-This repository contains scripts for setting up Linux development environment
-It has files including a linux.sh file which checks that the operating system is Linux and outputs an error message to linuxsetup.log, creates a .TRASH directory in the home directory if it doesn't already exist, changes the file .nanorc to .bup_nanorc and outputs a message saying the name was changed to the file linuxsetup.log. It then replaces the file from etc/nanorc with a new .nanorc file. The linux.sh finally adds the statement 'source~/.dotfiles/etc/bashrc.custom' to the end of the .bashrc file.
-This repository also has a cleanup.sh file reverses the changes made by the linux.sh script. Removes the .nanorc file in the home directory. It removes the line 'source ~/.dotfiles/etc/bashrc_custom' form the .bashrc file. Finally it removes the .TRASH directory in the home directory.
-The Makefile has two targets: the linux.sh and the cleanup.sh scripts. It runs the linux.sh script first then the cleanup.sh script second.
-
